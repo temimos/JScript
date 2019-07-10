@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Guess a Number</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var person = prompt("Please enter a number");
+        var num = Math.floor(Math.random() * 10) + 1;
+
+            if (person != num) {
+                document.getElementById("demo").innerHTML =
+                    "Sorry Guess again";
+            } else {
+                document.getElementById("demo").innerHTML = "Correct!"
+            }
+
+    }
+</script>
+
+</body>
+</html>
