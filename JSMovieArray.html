@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+   //Here is how you declare an array and print the first item
+
+var simpsons = ['homer','marge','lisa','bart'];
+    document.write("<br/>")
+    document.write(simpsons[0]);
+    document.write("<br/>")
+//Now sort the array and display it:
+    simpsons.sort();
+    //display the array
+
+    for (var i = 0; i < simpsons.length; i++){
+        document.write("<br/>")
+
+        document.write(simpsons[i]);
+    }
+    document.write("<br/>")
+
+   //The length property of the array returns a count of the number of items it
+   // contains.Since arrays are zero-based the last item will have an index value
+   // of one less than thelength. Access the last item as shown below:
+    var last = simpsons[simpsons.length - 1];
+    document.write(last);//bart
+    document.write("<br/>")
+    document.write("<br/>")
+   //In the next example I show you how to use push to add a new item.
+   // The opposite ofpush is pop which will remove it.
+    var donnie = simpsons.push('Bonnie');
+    document.write(simpsons);
+    simpsons.pop();
+   document.write("<br/>")
+   document.write("<br/>")
+
+
+</script>
+</body>
+</html>
